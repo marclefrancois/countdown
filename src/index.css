@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  background-color: black;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("images/summerfest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:0px -400px;
+  min-height: 100%;
+  margin: 0;
+}

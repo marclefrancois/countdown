@@ -1,0 +1,21 @@
+.countdown-box{
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+.countdown-title {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top:20px;
+}
+
+.countdown-call-to-action {
+  margin-top:50;
+  margin-bottom:0;
+  color: #8d644b;
+  font-size: 2em;
+  font-weight: bold;
+}
