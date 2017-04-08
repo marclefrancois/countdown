@@ -14,7 +14,7 @@ class Ticker extends Component {
   }
 
   _getCurrentCountDown() {
-    return moment(this.countDownToDate).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, 5, 0).toString();
+    return moment(this.countDownToDate).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, NaN, 0);
   }
 
   componentDidMount() {
@@ -37,7 +37,7 @@ class Ticker extends Component {
   render() {
     return (
       <div className="ticker">
-        {this.state.countdown}
+        {this.state.countdown.toString()}
       </div>
     );
   }
