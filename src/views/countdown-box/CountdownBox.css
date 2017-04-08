@@ -1,9 +1,10 @@
 .countdown-box{
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
   width: 500px;
   height: 300px;
+  margin-top: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
 
 .countdown-title {
@@ -17,7 +18,34 @@
 .countdown-call-to-action {
   margin-top:50;
   margin-bottom:0;
-  color: #8d644b;
+  color: #a3836e;
   font-size: 2em;
   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .countdown-box {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .countdown-title {
+    font-size: 1.5em;
+  }
+
+  .countdown-call-to-action {
+    font-size: 1.5em;
+  }
+
+  .countdown-image {
+    max-width: 230px;
+    height: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .countdown-box {
+    margin: auto;
+  }
 }
