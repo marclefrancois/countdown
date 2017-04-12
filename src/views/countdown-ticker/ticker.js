@@ -5,12 +5,11 @@ import countdown from 'countdown'
 import './ticker.css';
 
 class Ticker extends Component {
-  constructor() {
-    super();
-    this.countDownToDate = new Date('2017-06-22T15:00:00Z');
-    this.state = {
-      countdown: this._getCurrentCountDown()
-    };
+
+  countDownToDate = new Date('2017-06-22T15:00:00Z')
+
+  state = {
+    countdown: this._getCurrentCountDown()
   }
 
   _getCurrentCountDown() {

@@ -10,7 +10,7 @@ class CountdownBox extends Component {
         <img className="countdown-image" src={MiregoLogo} alt="Logo de Mirego"/>
         <div className="countdown-title">Our summerfest is in</div>
         <Ticker/>
-        <div className="countdown-call-to-action">BE PREPARED!</div>
+        <div className="countdown-call-to-action">BE PREPARED!!</div>
       </div>
     );
   }
