@@ -9,6 +9,4 @@ git add .
 git commit -m "deploy $(date "+%FT%T")"
 git push
 cd ~/Documents/GIT/countdown/
-git add .
-git commit -m "Increment version number"
 git push
