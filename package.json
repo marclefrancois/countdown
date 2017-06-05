@@ -1,6 +1,6 @@
 {
   "name": "marclefrancois.github.io",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "dependencies": {
     "moment": "^2.18.1",
