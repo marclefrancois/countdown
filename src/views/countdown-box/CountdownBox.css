@@ -1,6 +1,6 @@
 .countdown-box{
   width: 500px;
-  height: 300px;
+  height: 330px;
   margin-top: 100px;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
@@ -21,6 +21,12 @@
   color: #a3836e;
   font-size: 2em;
   font-weight: bold;
+}
+
+.countdown-amazon-link {
+  color: #FFF;
+  margin: 15px 0;
+  display: block;
 }
 
 @media (max-width: 700px) {

@@ -8,9 +8,10 @@ class CountdownBox extends Component {
     return (
       <div className="countdown-box">
         <img className="countdown-image" src={MiregoLogo} alt="Logo de Mirego"/>
-        <div className="countdown-title">Our summerfest is in</div>
+        <div className="countdown-title">The SummerFest is in</div>
         <Ticker/>
-        <div className="countdown-call-to-action">BE PREPARED!!</div>
+        <div className="countdown-call-to-action">Get your flotation device Now !</div>
+        <a className="countdown-amazon-link" href="https://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=inflatable&rh=i%3Aaps%2Ck%3Ainflatable">Shop on amazon</a>
       </div>
     );
   }
