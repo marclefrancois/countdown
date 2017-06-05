@@ -15,17 +15,30 @@
   margin-top:20px;
 }
 
+.countdown-call-to-action-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .countdown-call-to-action {
-  margin-top:50;
   margin-bottom:0;
+  margin-left: 45px;
   color: #a3836e;
   font-size: 2em;
   font-weight: bold;
 }
 
+.countdown-item-image {
+  height: 45px;
+  width: 45px;
+  margin: 0 10px;
+  padding-bottom: 7px;
+}
+
 .countdown-amazon-link {
   color: #FFF;
-  margin: 15px 0;
+  margin: 5px 0;
   display: block;
 }
 
