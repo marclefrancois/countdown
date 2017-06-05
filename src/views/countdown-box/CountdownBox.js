@@ -11,7 +11,7 @@ class CountdownBox extends Component {
         <div className="countdown-title">The SummerFest is in</div>
         <Ticker/>
         <div className="countdown-call-to-action">Get your flotation device Now !</div>
-        <a className="countdown-amazon-link" href="https://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=inflatable&rh=i%3Aaps%2Ck%3Ainflatable">Shop on amazon</a>
+        <a className="countdown-amazon-link" href="https://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=inflatable&rh=i%3Aaps%2Ck%3Ainflatable">Poigne toi s'en un sur Amazon</a>
       </div>
     );
   }
