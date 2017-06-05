@@ -1,4 +1,5 @@
 #!/bin/sh
+yarn version
 yarn build
 rm -rf ~/Documents/GIT/marclefrancois.github.io/*
 cp -R build/ ~/Documents/GIT/marclefrancois.github.io/
