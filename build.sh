@@ -1,4 +1,5 @@
 #!/bin/sh
+node version-number.js
 yarn version
 yarn build
 rm -rf ~/Documents/GIT/marclefrancois.github.io/*

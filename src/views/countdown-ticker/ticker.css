@@ -4,6 +4,7 @@
   font-size: 200%;
   color: #a3836e;
   text-align: center;
+  min-height: 82px;
 }
 
 @media (max-width: 700px) {

@@ -12,13 +12,10 @@ class Ticker extends Component {
     countdown: this._getCurrentCountDown()
   }
 
-  _getCurrentCountDown() {
-    return moment(this.countDownToDate).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, NaN, 0);
-  }
-
   componentDidMount() {
+    this._configureCountdownLocale();
     this.timerID = setInterval(
-      () => this.tick(),
+      () => this._tick(),
       1000
     );
   }
@@ -27,10 +24,23 @@ class Ticker extends Component {
     clearInterval(this.timerID);
   }
 
-  tick() {
+  _tick() {
     this.setState({
       countdown: this._getCurrentCountDown()
     });
+  }
+
+  _getCurrentCountDown() {
+    return moment(this.countDownToDate).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, NaN, 0);
+  }
+
+  _configureCountdownLocale() {
+    countdown.setLabels(
+      ' milliseconde| seconde| minute| heure| jour| semaine| mois| année| décennie| siècle| millénaire',
+      ' millisecondes| secondes| minutes| heures| jours| semaines| mois| années| décennies| siècles| millénaires',
+      ' et ',
+      ', ',
+      'maintenant');
   }
 
   render() {
