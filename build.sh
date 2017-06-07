@@ -1,6 +1,6 @@
 #!/bin/sh
-yarn version
 newVersion=$(node version-number.js)
+echo "$newVersion" | yarn version
 yarn build
 rm -rf ~/Documents/GIT/marclefrancois.github.io/*
 cp -R build/ ~/Documents/GIT/marclefrancois.github.io/
