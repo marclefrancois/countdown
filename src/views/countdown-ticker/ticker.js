@@ -12,8 +12,12 @@ class Ticker extends Component {
     countdown: this._getCurrentCountDown()
   }
 
-  componentDidMount() {
+  constructor() {
+    super();
     this._configureCountdownLocale();
+  }
+
+  componentDidMount() {
     this.timerID = setInterval(
       () => this._tick(),
       1000
