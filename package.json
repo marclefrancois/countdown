@@ -2,6 +2,7 @@
   "name": "marclefrancois.github.io",
   "version": "1.0.12",
   "private": true,
+  "homepage": "http://marclefrancois.github.io/",
   "dependencies": {
     "moment": "^2.18.1",
     "moment-countdown": "0.0.3",
