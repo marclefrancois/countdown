@@ -6,14 +6,11 @@ import './ticker.css';
 
 class Ticker extends Component {
 
-  countDownToDate = new Date('2017-06-22T15:00:00Z')
-
-  state = {
-    countdown: this._getCurrentCountDown()
-  }
-
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = {
+      countdown: ''
+    }
     this._configureCountdownLocale();
   }
 
@@ -22,6 +19,10 @@ class Ticker extends Component {
       () => this._tick(),
       1000
     );
+
+    this.setState({
+      countdown: this._getCurrentCountDown()
+    });
   }
 
   componentWillUnmount() {
@@ -35,7 +36,8 @@ class Ticker extends Component {
   }
 
   _getCurrentCountDown() {
-    return moment(this.countDownToDate).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, NaN, 0);
+    let date = new Date(this.props.countDownToDate)
+    return moment(date).countdown(new Date(), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS, NaN, 0);
   }
 
   _configureCountdownLocale() {
