@@ -7,10 +7,10 @@ html {
 
 body {
   font-family: sans-serif;
-  background-image: url("images/summerfest.jpg");
+  background-image: url("images/winterfest2017.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background-size: contain;
+  background-position: center;
   min-height: 100%;
   margin: 0;
 }

@@ -1,10 +1,10 @@
 .countdown-box{
   width: 500px;
-  height: 330px;
+  height: auto;
   margin-top: 100px;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding: 25px;
 }
 
 .countdown-title {

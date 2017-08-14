@@ -9,9 +9,8 @@ class CountdownBox extends Component {
     return (
       <div className="countdown-box">
         <img className="countdown-image" src={MiregoLogo} alt="Logo de Mirego"/>
-        <div className="countdown-title">Notre Summerfest est dans</div>
-        <Ticker countDownToDate='2017-06-22T16:00:00Z'/>
-        <Flotation/>
+        <div className="countdown-title">Notre Winterfest est dans</div>
+        <Ticker countDownToDate='2017-12-22T16:00:00Z'/>
       </div>
     );
   }
