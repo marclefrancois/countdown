@@ -1,51 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
 import CountdownBox from './views/countdown-box/countdown-box'
+import EasterEggImages from './views/easter-egg-images/easter-egg'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageUrl: 'official.jpg'
-    }
+      isWinter: true,
+      countdownToDate: '2017-12-08T14:00:00Z',
+      numberOfClicksOnCountdown: 0
+    };
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    this._setBackgroundStyle()
-    this.timerID = setInterval(
-      () => this._tick(),
-      10000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  _tick() {
+  handleClick() {
     this.setState({
-      imageUrl: 'winterfest2017.jpg'
-    });
-    this._setBackgroundStyle()
-    clearInterval(this.timerID);
-  }
-
-  _setBackgroundStyle() {
-    const imageUrl =`url(${this.state.imageUrl})`;
-    this.setState({
-      backgroundStyle : {
-        backgroundImage : imageUrl,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }
+        numberOfClicksOnCountdown: ++this.state.numberOfClicksOnCountdown
     });
   }
 
   render() {
     return (
-      <div className="App" style={this.state.backgroundStyle}>
-        <CountdownBox/>
+      <div className="App">
+        <EasterEggImages numberOfClick={this.state.numberOfClicksOnCountdown}/>
+        <CountdownBox isWinter={this.state.isWinter} countdownToDate={this.state.countdownToDate} onClick={this.handleClick}/>
       </div>
     );
   }
