@@ -13,17 +13,25 @@ class App extends Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.resetClick = this.resetClick.bind(this);
   }
 
-  handleClick() {
+  resetClick() {
+    this.setState({
+        numberOfClicksOnCountdown: 0
+    });
+  }
+
+  handleClick(event) {
     this.setState({
         numberOfClicksOnCountdown: ++this.state.numberOfClicksOnCountdown
     });
+    event.stopPropagation();
   }
 
   render() {
     return (
-      <div className="App">
+      <div className="App" onClick={this.resetClick}>
         <EasterEggImages numberOfClick={this.state.numberOfClicksOnCountdown}/>
         <CountdownBox isWinter={this.state.isWinter} countdownToDate={this.state.countdownToDate} onClick={this.handleClick}/>
       </div>

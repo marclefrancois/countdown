@@ -10,10 +10,10 @@ class CountdownBox extends Component {
   render() {
     const logo = this.props.isWinter ? WinterLogo: SummerLogo;
     return (
-      <div className="countdown-box" onClick={this.props.onClick}>
+      <div className="countdown-box">
         <img className="countdown-image" src={logo} alt="Logo de Mirego"/>
         <Ticker countDownToDate={this.props.countdownToDate}/>
-        <img className="countdown-image" src={MiregoLogo} alt="Logo de Mirego"/>
+        <img className="countdown-image" src={MiregoLogo} alt="ClickMe" onClick={this.props.onClick}/>
       </div>
     );
   }
