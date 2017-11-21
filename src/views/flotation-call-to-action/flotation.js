@@ -1,6 +1,6 @@
 import React from 'react';
 import './flotation.css';
-import FlotationItem from '../../images/item.png'
+import FlotationItem from './item.png'
 
 const Flotation = () => (
   <div>
