@@ -8,7 +8,7 @@ class App extends Component {
     super(props);
     this.state = {
       isWinter: true,
-      countdownToDate: '2017-12-08T14:00:00Z',
+      countdownToDate: '2021-12-17T17:00:00Z',
       numberOfClicksOnCountdown: 0
     };
 
@@ -18,13 +18,13 @@ class App extends Component {
 
   resetClick() {
     this.setState({
-        numberOfClicksOnCountdown: 0
+      numberOfClicksOnCountdown: 0
     });
   }
 
   handleClick(event) {
     this.setState({
-        numberOfClicksOnCountdown: ++this.state.numberOfClicksOnCountdown
+      numberOfClicksOnCountdown: ++this.state.numberOfClicksOnCountdown
     });
     event.stopPropagation();
   }
@@ -32,8 +32,8 @@ class App extends Component {
   render() {
     return (
       <div className="App" onClick={this.resetClick}>
-        <EasterEggImages numberOfClick={this.state.numberOfClicksOnCountdown}/>
-        <CountdownBox isWinter={this.state.isWinter} countdownToDate={this.state.countdownToDate} onClick={this.handleClick}/>
+        <EasterEggImages numberOfClick={this.state.numberOfClicksOnCountdown} />
+        <CountdownBox isWinter={this.state.isWinter} countdownToDate={this.state.countdownToDate} onClick={this.handleClick} />
       </div>
     );
   }
