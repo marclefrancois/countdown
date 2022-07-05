@@ -16,12 +16,11 @@
   color: white;
   font-size: 2em;
   font-weight: bold;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .countdown-image {
   max-width: 430px;
-  padding-bottom: 20px;
   width: auto;
   height: auto;
   margin: auto;
