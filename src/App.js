@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isWinter: true,
+      isWinter: false,
       countdownToDate: '2022-07-15T13:00:00Z',
       numberOfClicksOnCountdown: 0
     };

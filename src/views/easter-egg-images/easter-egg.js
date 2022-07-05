@@ -4,6 +4,7 @@ import MiregoMtl from './images/winter/mirego-mtl.jpg'
 import Bath from './images/winter/winterfest-bath.jpg'
 import Waitresses from './images/winter/waitresses.jpg'
 import AfterParty from './images/winter/winterfest2017.jpg'
+import Team from './images/summer/summerfest.jpg'
 
 class EasterEgg extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class EasterEgg extends Component {
     } else if (this.props.numberOfClick >= 10) {
       return MiregoMtl;
     } else {
-      return null;
+      return Team;
     }
   }
 

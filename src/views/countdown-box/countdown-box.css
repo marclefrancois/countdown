@@ -1,6 +1,8 @@
 .countdown-box{
   position: absolute;
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   height: auto;
   margin-top: 100px;
   text-align: center;
@@ -15,6 +17,14 @@
   font-size: 2em;
   font-weight: bold;
   margin-top:20px;
+}
+
+.countdown-image {
+  max-width: 430px;
+  padding-bottom: 20px;
+  width: auto;
+  height: auto;
+  margin: auto;
 }
 
 @media (max-width: 700px) {
