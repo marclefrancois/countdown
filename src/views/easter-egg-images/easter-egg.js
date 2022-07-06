@@ -65,7 +65,7 @@ class EasterEgg extends Component {
       image160, 
       image170,
     ]
-    const multiplier = 10
+    const multiplier = 2
     if (this.props.numberOfClick > 0 && this.props.numberOfClick < (imagesLouche.length * multiplier)) {
       return imagesLouche[Math.floor(this.props.numberOfClick/multiplier)];
     } else {
