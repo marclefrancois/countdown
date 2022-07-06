@@ -7,7 +7,7 @@ class Flotation extends Component {
     return (
       <div>
         <div className="countdown-call-to-action-container">
-          <div className="countdown-call-to-action">Soit pret! 🏊‍♂️☀️😎🍻🎸🍷🏐</div>
+          <div className="countdown-call-to-action">Soit prêt! 🏊‍♂️☀️😎🍻🎸🍷🏐</div>
           <img className="countdown-item-image" src={FlotationItem} onClick={this.props.onClickItem} alt="Item de flotaison"/>
         </div>
       </div>
