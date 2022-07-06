@@ -20,7 +20,7 @@ import image120 from './images/summer/120.jpg'
 import image130 from './images/summer/130.jpg'
 import image140 from './images/summer/140.jpg'
 import image150 from './images/summer/150.jpg'
-import image160 from './images/summer/160.png'
+import image160 from './images/summer/160.jpg'
 import image170 from './images/summer/170.gif'
 import image180 from './images/summer/180.jpg'
 import image190 from './images/summer/190.jpg'
@@ -65,19 +65,10 @@ class EasterEgg extends Component {
       image160, 
       image170,
     ]
-    if (this.props.numberOfClick >=10 && this.props.numberOfClick < imagesLouche.length * 10) {
-        return imagesLouche[Math.floor(this.props.numberOfClick/10) - 1];
-    } /*else if (this.props.numberOfClick < 40) {
-        return image20;
-    } else if (this.props.numberOfClick < 60) {
-        return image40;
-    } else if (this.props.numberOfClick < 80) {
-      return image60;
-    } else if (this.props.numberOfClick < 100) {
-      return image80;
-    } else if (this.props.numberOfClick >= 100) {
-      return image100;
-    } */else {
+    const multiplier = 10
+    if (this.props.numberOfClick > 0 && this.props.numberOfClick < (imagesLouche.length * multiplier)) {
+      return imagesLouche[Math.floor(this.props.numberOfClick/multiplier)];
+    } else {
       return imagesMontrable[Math.floor(Math.random() * imagesMontrable.length)];
     }
   }
