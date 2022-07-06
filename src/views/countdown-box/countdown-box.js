@@ -12,7 +12,7 @@ class CountdownBox extends Component {
     return (
       <div className="countdown-box">
         <img className="countdown-title-image" src={logo} alt="Summerfest things"/>
-        <div className="countdown-title">Le Summerfest est dans</div>
+        <div className="countdown-title">Ton Summerfest est dans:</div>
         <Ticker countDownToDate={this.props.countdownToDate}/>
         <CallToAction onClickItem={this.props.onClick} />
       </div>
