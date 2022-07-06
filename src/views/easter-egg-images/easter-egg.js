@@ -1,10 +1,12 @@
 import React, { Component }  from 'react';
 import './easter-egg.css';
-import MiregoMtl from './images/winter/mirego-mtl.jpg'
-import Bath from './images/winter/winterfest-bath.jpg'
-import Waitresses from './images/winter/waitresses.jpg'
-import AfterParty from './images/winter/winterfest2017.jpg'
-import Team from './images/summer/summerfest.jpg'
+import team from './images/summer/summerfest.jpg'
+import image10 from './images/summer/10.jpg'
+import image20 from './images/summer/20.jpg'
+import image40 from './images/summer/40.jpg'
+import image60 from './images/summer/60.jpg'
+import image80 from './images/summer/80.jpg'
+import image100 from './images/summer/100.jpg'
 
 class EasterEgg extends Component {
   constructor(props) {
@@ -15,16 +17,22 @@ class EasterEgg extends Component {
   }
 
   getImage() {
-    if (this.props.numberOfClick >= 90) {
-        return AfterParty;
-    } else if (this.props.numberOfClick >= 50) {
-        return Bath;
-    } else if (this.props.numberOfClick >= 30) {
-        return Waitresses;
-    } else if (this.props.numberOfClick >= 10) {
-      return MiregoMtl;
+    if (this.props.numberOfClick < 10) {
+      return team;
+    } else if (this.props.numberOfClick < 20) {
+        return image10;
+    } else if (this.props.numberOfClick < 40) {
+        return image20;
+    } else if (this.props.numberOfClick < 60) {
+        return image40;
+    } else if (this.props.numberOfClick < 80) {
+      return image60;
+    } else if (this.props.numberOfClick < 100) {
+      return image80;
+    } else if (this.props.numberOfClick >= 100) {
+      return image100;
     } else {
-      return Team;
+      return team;
     }
   }
 

@@ -7,7 +7,7 @@
   margin-top: 100px;
   text-align: center;
   padding: 25px;
-  background-color: rgba(3, 19, 92, 0.5);
+  background-color: rgba(3, 19, 92, 0.7);
   z-index: 50;
 }
 
@@ -17,6 +17,13 @@
   font-size: 2em;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.countdown-title-image {
+  max-width: 430px;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .countdown-image {
@@ -48,7 +55,14 @@
 }
 
 @media (max-height: 500px) {
+  .countdown-title-image {
+    max-width: 230px;
+    width: 100%;
+    height: auto
+  }
   .countdown-box {
+    width: auto;
+    height: auto;
     margin: auto;
   }
 }

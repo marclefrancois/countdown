@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import './countdown-box.css';
 
 import SummerLogo from './logo-summerfest.png'
-import MiregoLogo from './logo-mirego.png'
 import WinterLogo from './logo-winterfest.png'
 import Ticker from '../countdown-ticker/ticker'
+import CallToAction from '../flotation-call-to-action/flotation'
 
 class CountdownBox extends Component {
   render() {
     const logo = this.props.isWinter ? WinterLogo: SummerLogo;
     return (
       <div className="countdown-box">
-        <img className="countdown-image" src={logo} alt="Summerfest things"/>
+        <img className="countdown-title-image" src={logo} alt="Summerfest things"/>
         <div className="countdown-title">Le Summerfest est dans</div>
         <Ticker countDownToDate={this.props.countdownToDate}/>
-        <img className="countdown-image" src={MiregoLogo} alt="ClickMe" onClick={this.props.onClick}/>
+        <CallToAction onClickItem={this.props.onClick} />
       </div>
     );
   }
